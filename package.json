@@ -1,0 +1,16 @@
+{
+  "name": "mentor-student-portal",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron": "^25.3.0",
+    "json2csv": "^5.0.7"
+  }
+}

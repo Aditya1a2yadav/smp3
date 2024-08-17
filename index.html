@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mentorship Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Mentorship Program</h1>
+    </header>
+    <main>
+        <form id="data-form">
+            <div class="form-group">
+                <label for="type">Type:</label>
+                <select id="type" name="type">
+                    <option value="student">Student</option>
+                    <option value="mentor">Mentor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="roll-number">Roll Number:</label>
+                <input type="text" id="roll-number" name="roll-number" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number"> -->
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <input type="text" id="branch" name="branch">
+            </div>
+            <div class="form-group">
+                <label for="home-state">Home State:</label>
+                <select id="home-state" name="home-state">
+                    <!-- List of states -->
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mother-tongue">Mother Tongue:</label>
+                <select id="mother-tongue" name="mother-tongue">
+                    <!-- List of languages -->
+                    <option value="Assamese">Assamese</option>
+                    <option value="Bengali">Bengali</option>
+                    <option value="Bodo">Bodo</option>
+                    <option value="Dogri">Dogri</option>
+                    <option value="Gujarati">Gujarati</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Kannada">Kannada</option>
+                    <option value="Kashmiri">Kashmiri</option>
+                    <option value="Konkani">Konkani</option>
+                    <option value="Maithili">Maithili</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Manipuri">Manipuri</option>
+                    <option value="Marathi">Marathi</option>
+                    <option value="Nepali">Nepali</option>
+                    <option value="Odia">Odia</option>
+                    <option value="Punjabi">Punjabi</option>
+                    <option value="Sanskrit">Sanskrit</option>
+                    <option value="Santali">Santali</option>
+                    <option value="Sindhi">Sindhi</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Urdu">Urdu</option>
+                </select>
+            </div>
+            <div class="form-group hobbies">
+                <div class="hobby-group">
+                    <label for="cultural-hobbies">Cultural Hobbies:</label>
+                    <select id="cultural-hobbies" name="cultural-hobbies" multiple>
+                        <!-- List of cultural hobbies -->
+                        <option value="Dancing">Dancing</option>
+                        <option value="Singing">Singing</option>
+                        <option value="Acting">Acting</option>
+                        <option value="Painting">Painting</option>
+                        <option value="Writing">Writing</option>
+                    </select>
+                </div>
+                <div class="hobby-group">
+                    <label for="sports-hobbies">Sports Hobbies:</label>
+                    <select id="sports-hobbies" name="sports-hobbies" multiple>
+                        <!-- List of sports hobbies -->
+                        <option value="Cricket">Cricket</option>
+                        <option value="Football">Football</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="Volleyball">Volleyball</option>
+                        <option value="Badminton">Badminton</option>
+                    </select>
+                </div>
+                <div class="hobby-group">
+                    <label for="tech-hobbies">Tech Hobbies:</label>
+                    <select id="tech-hobbies" name="tech-hobbies" multiple>
+                        <!-- List of tech hobbies -->
+                        <option value="Programming">Programming</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Gaming">Gaming</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="3D Printing">3D Printing</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="career-options">Career Options:</label>
+                <ul id="career-options" class="draggable-list" draggable="true">
+                    <!-- List items here -->
+                    <li draggable="true">Placement</li>
+                    <li draggable="true">Civil Services</li>
+                    <li draggable="true">Research</li>
+                    <li draggable="true">Business</li>
+                    <li draggable="true">Startup</li>
+                </ul>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <script src="renderer.js"></script>
+</body>
+</html>

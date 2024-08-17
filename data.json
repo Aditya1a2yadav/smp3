@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "name": "X",
+      "rollNumber": "X",
+      "phoneNumber": "a",
+      "branch": "X",
+      "homeState": "Andhra Pradesh",
+      "motherTongue": "Hindi",
+      "clubs": [
+        "Music",
+        "Football",
+        "Robotics"
+      ],
+      "careerOptions": [
+        "Placement",
+        "Research",
+        "Business",
+        "Civil Services",
+        "Startup"
+      ]
+    }
+  ],
+  "mentors": []
+}
